@@ -1,0 +1,2 @@
+$codeCertificate = Get-ChildItem Cert:\LocalMachine\My | Where-Object {$_.Subject -eq "CN=CVE-2021-36934 Remediate Script - SecOps"}
+Set-AuthenticodeSignature -FilePath Get-HiveNightmareStatus.ps1 -Certificate $codeCertificate -TimeStampServer "http://timestamp.digicert.com"
