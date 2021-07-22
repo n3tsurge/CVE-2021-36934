@@ -1,0 +1,9 @@
+{
+	"enginesWantedState": {
+		"penetration": "off"
+	},
+	"vssConfig": {
+		"vssProtection": false
+	},
+	"vssSnapshots": false
+}
